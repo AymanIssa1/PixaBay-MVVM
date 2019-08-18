@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="hitDetailsIconBorderWidthColor">#000</color>
+
+    <color name="infoStatusBackgroundColor">#eaf4fd</color>
+    <color name="infoStatusTextColor">#3294ef</color>
+
+    <color name="successStatusBackgroundColor">#eef4e5</color>
+    <color name="successStatusTextColor">#5d9b00</color>
+
+    <color name="errorStatusBackgroundColor">#fdedee</color>
+    <color name="errorStatusTextColor">#ed4956</color>
+
+</resources>

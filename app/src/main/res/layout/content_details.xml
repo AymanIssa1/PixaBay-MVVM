@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_details"
+        tools:context=".ui.details.DetailsActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/hit_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:transitionName="@string/transition_hit_image"
+                    tools:src="@drawable/sample_image"
+                    style="@style/hitImageViewStyle"/>
+
+
+            <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chips_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp">
+
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/hitDetailsCardViewStyle">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/hitDetailsLinearLayoutStyle">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/user_image_view"
+                                    tools:src="@drawable/sample_user_image"
+                                    style="@style/hitDetailsImageViewStyle"/>
+
+                            <TextView
+                                    android:id="@+id/user_name_text_view"
+                                    tools:text="Jasmin John"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    style="@style/hitDetailsTextStyle"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/hitDetailsCardViewStyle">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/hitDetailsLinearLayoutStyle">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                    android:src="@drawable/ic_view"
+                                    app:civ_circle_background_color="@color/hitDetailsIconBorderWidthColor"
+                                    app:civ_border_width="@dimen/hit_details_icon_border_width_dimen"
+                                    style="@style/hitDetailsImageViewStyle"/>
+
+                            <TextView
+                                    android:id="@+id/views_text_view"
+                                    tools:text="100 Views"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    style="@style/hitDetailsTextStyle"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/hitDetailsCardViewStyle">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/hitDetailsLinearLayoutStyle">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                    android:src="@drawable/ic_download"
+                                    app:civ_circle_background_color="@color/hitDetailsIconBorderWidthColor"
+                                    app:civ_border_width="@dimen/hit_details_icon_border_width_dimen"
+                                    style="@style/hitDetailsImageViewStyle"/>
+
+                            <TextView
+                                    android:id="@+id/downloads_text_view"
+                                    tools:text="100 Downloads"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    style="@style/hitDetailsTextStyle"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/hitDetailsCardViewStyle">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/hitDetailsLinearLayoutStyle">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                    android:src="@drawable/ic_heart"
+                                    app:civ_circle_background_color="@color/hitDetailsIconBorderWidthColor"
+                                    app:civ_border_width="@dimen/hit_details_icon_border_width_dimen"
+                                    style="@style/hitDetailsImageViewStyle"/>
+
+                            <TextView
+                                    android:id="@+id/likes_text_view"
+                                    tools:text="100 Likes"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    style="@style/hitDetailsTextStyle"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
